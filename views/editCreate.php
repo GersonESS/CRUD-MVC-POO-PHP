@@ -8,23 +8,23 @@
     <title>Clients</title>
 </head>
 <body>
-    <a class="button btn-back" href="index.php">Back</a>
-    <h1>Clients config</h1>
+    <a class="button btn-back" href="index.php">Volta</a>
+    <h1>Clientes config</h1>
     <div class="content">
         <form action="index.php" method="POST">
             <div class="input-box">
-                <label for="name">Name:</label>
-                <input class="input" type="text" placeholder="Write a name to client" value="<?= isset($resultData[0]['name']) ? $resultData[0]['name'] : '' ?>" name="name" required>
+                <label for="name">Nome:</label>
+                <input class="input" type="text" placeholder="Escreva o nome do cliente" value="<?= isset($resultData[0]['nome']) ? $resultData[0]['nome'] : '' ?>" name="nome" required>
             </div>
             <br><br>
             <div class="input-box">
                 <label for="email">Email:</label>
-                <input class="input" type="email" placeholder="Write a email to client" value="<?= isset($resultData[0]['email']) ? $resultData[0]['email'] : '' ?>" name="email" required>
+                <input class="input" type="email" placeholder="Escreva o email do cliente" value="<?= isset($resultData[0]['email']) ? $resultData[0]['email'] : '' ?>" name="email" required>
             </div>
             <br><br>
             <div class="input-box">
-                <label for="celular">celular:</label>
-                <input class="input" type="number" placeholder="Write a celular to client" value="<?= isset($resultData[0]['celular']) ? $resultData[0]['celular'] : '' ?>" name="celular" required>
+                <label for="celular">Celular:</label>
+                <input class="input" type="number" placeholder="Escreva o celular do cliente" value="<?= isset($resultData[0]['celular']) ? $resultData[0]['celular'] : '' ?>" name="celular" required>
             </div>
             <br><br>
             <input type="hidden" name="a" value="<?= isset($resultData[0]['id']) ? 'edit' : 'new' ?>">
