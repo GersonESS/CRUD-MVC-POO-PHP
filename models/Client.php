@@ -20,7 +20,7 @@
         public function search($data,$view=null){
             if($view == 'index')
             {
-                $sqlSelect = $this->connection->query("SELECT * FROM $this->table WHERE id = '$data' or name LIKE '%$data%' or email LIKE '%$data%' or phone LIKE '%$data%'");
+                $sqlSelect = $this->connection->query("SELECT * FROM $this->table WHERE id = '$data' or name LIKE '%$data%' or email LIKE '%$data%' or celular LIKE '%$data%'");
             }
             else
             {
@@ -31,16 +31,16 @@
         }
 
         public function new($data){
-            $sqlUpdate = "INSERT INTO $this->table (name,email,phone) VALUES (:name, :email, :phone)";
-            $resultQuery = $this->connection->prepare($sqlUpdate)->execute(['name'=>$data['name'],'email'=>$data['email'],'phone'=>$data['phone']]);
+            $sqlUpdate = "INSERT INTO $this->table (name,email,celular) VALUES (:name, :email, :celular)";
+            $resultQuery = $this->connection->prepare($sqlUpdate)->execute(['name'=>$data['name'],'email'=>$data['email'],'celular'=>$data['celular']]);
             return $this->verifyReturn($resultQuery);
         }
 
         public function edit($data){
-            if(strlen($data['phone']) <= 11)
+            if(strlen($data['celular']) <= 11)
             {
-                $sqlUpdate = "UPDATE $this->table SET name = :name, email = :email, phone = :phone WHERE id = :id";
-                $resultQuery = $this->connection->prepare($sqlUpdate)->execute(['id'=>$data['id'],'name'=>$data['name'],'email'=>$data['email'],'phone'=>$data['phone']]);
+                $sqlUpdate = "UPDATE $this->table SET name = :name, email = :email, celular = :celular WHERE id = :id";
+                $resultQuery = $this->connection->prepare($sqlUpdate)->execute(['id'=>$data['id'],'name'=>$data['name'],'email'=>$data['email'],'celular'=>$data['celular']]);
                 return $this->verifyReturn($resultQuery);
             }
             return false;
