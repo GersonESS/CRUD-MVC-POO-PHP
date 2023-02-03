@@ -8,7 +8,7 @@
 
         function __construct(){
             parent::__construct();
-            $this->table = "clientes";
+            $this->table = "cliente";
         }
 
         public function getAll(){
