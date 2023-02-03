@@ -31,16 +31,19 @@
         }
 
         public function new($data){
-            $sqlUpdate = "INSERT INTO $this->table (nome,email,celular) VALUES (:nome, :email, :celular)";
-            $resultQuery = $this->connection->prepare($sqlUpdate)->execute(['nome'=>$data['nome'],'email'=>$data['email'],'celular'=>$data['celular']]);
+            $sqlUpdate = "INSERT INTO $this->table 
+                        (nome,cnpj,email,celular) 
+                VALUES 
+                        (:nome, :cnpj, :email, :celular)";
+            $resultQuery = $this->connection->prepare($sqlUpdate)->execute(['nome'=>$data['nome'],'cnpj'=>$data['cnpj'],'cnpj'=>$data['email'],'celular'=>$data['celular']]);
             return $this->verifyReturn($resultQuery);
         }
 
         public function edit($data){
             if(strlen($data['celular']) <= 11)
             {
-                $sqlUpdate = "UPDATE $this->table SET nome = :nome, email = :email, celular = :celular WHERE id = :id";
-                $resultQuery = $this->connection->prepare($sqlUpdate)->execute(['id'=>$data['id'],'nome'=>$data['nome'],'email'=>$data['email'],'celular'=>$data['celular']]);
+                $sqlUpdate = "UPDATE $this->table SET nome = :nome, cnpj = :cnpj, email = :email,  celular = :celular WHERE id = :id";
+                $resultQuery = $this->connection->prepare($sqlUpdate)->execute(['id'=>$data['id'],'nome'=>$data['nome'],'cnpj'=>$data['cnpj'],'email'=>$data['email'],'celular'=>$data['celular']]);
                 return $this->verifyReturn($resultQuery);
             }
             return false;

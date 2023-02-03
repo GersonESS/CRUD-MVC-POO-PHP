@@ -26,6 +26,13 @@
                 <label for="celular">Celular:</label>
                 <input class="input" type="number" placeholder="Escreva o celular do cliente" value="<?= isset($resultData[0]['celular']) ? $resultData[0]['celular'] : '' ?>" name="celular" required>
             </div>
+
+            <br><br>
+            <div class="input-box">
+                <label for="cnpj">CNPJ:</label>
+                <input class="input" type="number" placeholder="Escreva o cnpj do cliente" value="<?= isset($resultData[0]['cnpj']) ? $resultData[0]['cnpj'] : '' ?>" name="cnpj" required>
+            </div>
+
             <br><br>
             <input type="hidden" name="a" value="<?= isset($resultData[0]['id']) ? 'edit' : 'new' ?>">
             <input type="hidden" name="id" value="<?= isset($resultData[0]['id']) ? $resultData[0]['id'] : '' ?>">
