@@ -14,6 +14,7 @@
         <form action="index.php" method="POST">
             <div class="input-box">
                 <label for="name">Nome:</label>
+
                 <input class="input" type="text" placeholder="Escreva o nome do cliente" value="<?= isset($resultData[0]['nome']) ? $resultData[0]['nome'] : '' ?>" name="nome" required>
             </div>
             <br><br>
@@ -24,7 +25,7 @@
             <br><br>
             <div class="input-box">
                 <label for="celular">Celular:</label>
-                <input class="input" type="number" placeholder="Escreva o celular do cliente" value="<?= isset($resultData[0]['celular']) ? $resultData[0]['celular'] : '' ?>" name="celular" required>
+                <input class="input" type="number" placeholder="Escreva o celular do cliente" value="<?= isset($resultData[0]['celular']) ? $resultData[0]['celular'] : '' ?>" name="celular" required maxlength="150">
             </div>
             <br><br>
             <input type="hidden" name="a" value="<?= isset($resultData[0]['id']) ? 'edit' : 'new' ?>">
