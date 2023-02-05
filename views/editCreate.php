@@ -10,6 +10,8 @@
 <body>
     <div class="content">
     <a class="button btn-back" href="index.php">Volta</a>
+
+    
     <h1>Cadastro De Clientes 🔥 </h1>
         <form action="index.php" method="POST">
             <div class="input-box">
