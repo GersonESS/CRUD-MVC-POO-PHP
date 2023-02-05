@@ -22,7 +22,7 @@
     <form action="index.php">
         <input class="input" type="search" name="search" placeholder="Pesquisar">
         <input type="hidden" name="a" value="search">
-        <input class="button" type="submit" name="submit" value="Submit">
+        <input class="button" type="submit" name="submit" value="Enviar">
     </form>
     <a class="button" href="./index.php?a=goToNew">Novo Cliente</a>
     <div class="content">
