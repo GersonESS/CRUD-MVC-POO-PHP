@@ -10,7 +10,7 @@
 <body>
     <div class="content">
     <a class="button btn-back" href="index.php">Volta</a>
-    <h1>Clientes config 🔥 </h1>
+    <h1>Cadastro De Clientes 🔥 </h1>
         <form action="index.php" method="POST">
             <div class="input-box">
                 <label for="name">Nome:</label>
@@ -34,7 +34,7 @@
             <br><br>
             <input type="hidden" name="a" value="<?= isset($resultData[0]['id']) ? 'edit' : 'new' ?>">
             <input type="hidden" name="id" value="<?= isset($resultData[0]['id']) ? $resultData[0]['id'] : '' ?>">
-            <input class="button btn-search" type="submit" name="submit" value="Submit">
+            <input class="button btn-search" type="submit" name="submit" value="Enviar">
         </form>
     </div>
 </body>
