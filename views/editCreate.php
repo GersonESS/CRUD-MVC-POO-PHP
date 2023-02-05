@@ -14,7 +14,6 @@
         <form action="index.php" method="POST">
             <div class="input-box">
                 <label for="name">Nome:</label>
-
                 <input class="input" type="text" placeholder="Escreva o nome do cliente" value="<?= isset($resultData[0]['nome']) ? $resultData[0]['nome'] : '' ?>" name="nome" required>
             </div>
             <br><br>
