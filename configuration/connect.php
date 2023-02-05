@@ -4,7 +4,7 @@
     define('HOST', 'localhost');
     define('DBNAME', 'cadastro');
     define('USER', 'root');
-    define('PASSWORD', 'gabibi89');
+    define('PASSWORD', '');
 
     class Connect{
         protected $connection;
