@@ -67,12 +67,7 @@ h1{
     color: var(--color-red);
     display: none;
 }
-.input{
-    padding: 6px;
-    border-radius: 5px;
-    border: none;
-    width: 15vw;
-}
+
 .inputs{
     padding: 8px 5px;
     outline: none;
@@ -120,6 +115,12 @@ h1{
     border-color: var(--color-purple1);
 }
 
+/* .box-select{
+    display: flex;
+    justify-content: space-evenly;
+    font-weight: bold;
+    gap: 1rem;
+} */
 .table thead{
     background-color: var(--color-dark3);
 }
