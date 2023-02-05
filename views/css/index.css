@@ -126,6 +126,27 @@ h1{
     color: var(--color-red);
     display: none;
 }
+button[type="submit"]{
+    padding: 1rem;
+    font-size: 1rem;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    margin-top: 1rem;
+    background-color: var(--color-purple2);
+    color: var(--color-white);
+    cursor: pointer;
+    transition: .3s;
+}
 .inputs:focus{
     border-color: var(--color-purple1);
+}
+button[type="submit"]:hover{
+    background-color: var(--color-purple1);
+}
+@media screen and (max-width: 576px) {
+    .box-select{
+        flex-direction: column;
+        gap: 5px;
+    }
 }
