@@ -2,9 +2,9 @@
     
     <?php
     define('HOST', 'localhost');
-    define('DBNAME', 'cadastro');
+    define('DBNAME', 'world');
     define('USER', 'root');
-    define('PASSWORD', 'gabibi89');
+    define('PASSWORD', '');
 
     class Connect{
         protected $connection;
@@ -26,6 +26,5 @@
         } 
 
     }
-
-   
+   $testConnection = new Connect();
 ?>
