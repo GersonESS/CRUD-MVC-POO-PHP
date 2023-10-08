@@ -27,5 +27,5 @@
 
     }
 
-   
+   $testConnection = new Connect();
 ?>
