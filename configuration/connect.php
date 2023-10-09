@@ -1,8 +1,6 @@
-
-    
-    <?php
+<?php
     define('HOST', 'localhost');
-    define('DBNAME', 'CRUD-MVC-POO-PHP');
+    define('DBNAME', 'crud-mvc-php');
     define('USER', 'root');
     define('PASSWORD', '');
 
@@ -20,11 +18,10 @@
             } 
             catch (PDOException $e) 
             {
-                echo "Error na conecção com Database!".$e->getMessage();
+                echo "Error to connect with Database!".$e->getMessage();
                 die();
             }
         } 
 
     }
-   $testConnection = new Connect();
 ?>
