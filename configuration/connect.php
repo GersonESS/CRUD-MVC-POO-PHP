@@ -1,10 +1,8 @@
-
-    
-    <?php
+<?php
     define('HOST', 'localhost');
-    define('DBNAME', 'cadastro');
+    define('DBNAME', 'crud-mvc-poo-php');
     define('USER', 'root');
-    define('PASSWORD', 'gabibi89');
+    define('PASSWORD', '');
 
     class Connect{
         protected $connection;
@@ -20,12 +18,16 @@
             } 
             catch (PDOException $e) 
             {
-                echo "Error na conecção com Database!".$e->getMessage();
+                echo "Error to connect with Database!".$e->getMessage();
                 die();
             }
         } 
 
     }
 
+<<<<<<< HEAD
    $testConnection = new Connect();
 ?>
+=======
+?>
+>>>>>>> 651acba0162e63a2447e91e1b1e4ea42db73d7e6
