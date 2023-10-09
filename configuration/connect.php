@@ -2,7 +2,7 @@
     
     <?php
     define('HOST', 'localhost');
-    define('DBNAME', 'world');
+    define('DBNAME', 'CRUD-MVC-POO-PHP');
     define('USER', 'root');
     define('PASSWORD', '');
 
