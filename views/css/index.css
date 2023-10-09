@@ -5,12 +5,6 @@
     --color-dark1: #1d1d1d;
     --color-dark2: #222222;
     --color-dark3: #353535;
-    --color-purple1: #9333FF;
-    --color-purple2: indigo;
-}
-*{
-    margin: 0;
-    padding: 0;
 }
 
 body{
@@ -23,78 +17,6 @@ body{
     gap: 2em;
 }
 
-.content{
-    background-color: var(--color-dark2);
-    padding: 2rem;
-    border-radius: 10px;
-    min-width: 30%;
-    overflow: auto;
-}
-
-h1{
-    margin-bottom: 1rem;
-    text-align: center;
-}
-
-.content form{
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-}
-
-.span-required{
-    font-size: 12px;
-    margin: 3px 0 0 1px;
-    color: var(--color-red);
-    display: none;
-}
-
-.inputs{
-    padding: 8px 5px;
-    outline: none;
-    border-radius: 5px;
-    background-color: var(--color-dark1);
-    border: 2px solid var(--color-dark1);
-    color: var(--color-white);
-    width: 100%;
-    box-sizing: border-box;
-    transition: .3s;
-}
-
-.inputs:focus{
-    border-color: var(--color-purple1);
-}
-
-.box-select{
-    display: flex;
-    justify-content: space-evenly;
-    font-weight: bold;
-    gap: 1rem;
-} 
-
-button[type="submit"]{
-    padding: 1rem;
-    font-size: 1rem;
-    outline: none;
-    border: none;
-    border-radius: 5px;
-    margin-top: 1rem;
-    background-color: var(--color-purple2);
-    color: var(--color-white);
-    cursor: pointer;
-    transition: .3s;
-}
-
-button[type="submit"]:hover{
-    background-color: var(--color-purple1);
-}
-
-@media screen and (max-width: 576px) {
-    .box-select{
-        flex-direction: column;
-        gap: 5px;
-    }
-}
 .box-message{
     display: flex;
     flex-direction: row;
@@ -106,6 +28,7 @@ button[type="submit"]:hover{
     border-radius: 5px;
     background: var(--color-dark2);
 }
+
 .btn-close-message{
     background: none;
     border: none;
@@ -116,10 +39,18 @@ button[type="submit"]:hover{
 .btn-close-message svg{
     margin-top: 3px;
 }
+
+.input{
+    padding: 6px;
+    border-radius: 5px;
+    border: none;
+    width: 15vw;
+}
+
 .button{
     text-decoration: none;
     color: var(--color-white);
-    background-color: var(--color-purple1);
+    background-color: var(--color-blue);
     padding: 6px;
     border-radius: 5px;
     border: none;
@@ -131,7 +62,7 @@ button[type="submit"]:hover{
 }
 
 .btn-back{
-    background-color: var(--color-blue);
+    background-color: var(--color-dark3);
 }
 
 .btn-delete{
@@ -139,21 +70,7 @@ button[type="submit"]:hover{
     background-color: var(--color-red);
 }
 
-
 .btn-search{
-
-   
-   
-    
-    padding: 6px;
-    border-radius: 5px;
-    border: none;
-   
-
-
-    background-color: var(--color-purple1);
-    color: var(--color-white);
-    font-size: 1rem;
     width: 100%;
 }
 
@@ -162,6 +79,7 @@ button[type="submit"]:hover{
     text-align: left;
     margin: 0;
 }
+
 .table thead{
     background-color: var(--color-dark3);
 }
@@ -174,7 +92,3 @@ button[type="submit"]:hover{
     background-color: var(--color-dark2);
 }
 
-h1{
-    margin-bottom: 1rem;
-    text-align: center;
-}

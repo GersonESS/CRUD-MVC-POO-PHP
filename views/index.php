@@ -22,17 +22,17 @@
     <form action="index.php">
         <input class="input" type="search" name="search" placeholder="Pesquisar">
         <input type="hidden" name="a" value="search">
-        <input class="button" type="submit" name="submit" value="Enviar">
+        <input class="button" type="submit" name="submit" value="Submit">
     </form>
-    <a class="button" href="./index.php?a=goToNew">Novo Cliente</a>
+    <a class="button" href="./index.php?a=goToNew">New client</a>
     <div class="content">
         <table class="table">
             <thead>
                 <tr>
                     <th>ID</th>
-                    <th>Nome</th>
+                    <th>Name</th>
                     <th>Email</th>
-                    <th>Celular</th>
+                    <th>Phone</th>
                     <th></th>
                 </tr>
             </thead>
@@ -40,9 +40,9 @@
                 <?php foreach($resultData as $data): ?>
                     <tr>
                         <td> <?= $data["id"]; ?> </td>
-                        <td> <?= $data["nome"]; ?> </td>
+                        <td> <?= $data["name"]; ?> </td>
                         <td> <?= $data["email"]; ?> </td>
-                        <td> <?= $data["celular"]; ?> </td>
+                        <td> <?= $data["phone"]; ?> </td>
                         <td> 
                             <a class="button btn-edit" href="./index.php?a=search&v=editCreate&search=<?= $data['id'] ?>">Editar</a>
                             <button class="button btn-delete" onclick="verifyDelete(<?= $data['id'] ?>)">Deletar</button> 
