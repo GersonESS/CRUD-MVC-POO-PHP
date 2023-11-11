@@ -1,8 +1,8 @@
 <?php
     define('HOST', 'localhost');
-    define('DBNAME', 'crud-mvc-poo-php');
+    define('DBNAME', 'crud_mvc_poo_php');
     define('USER', 'root');
-    define('PASSWORD', '');
+    define('PASSWORD', 's');
 
     class Connect{
         protected $connection;
