@@ -1,6 +1,6 @@
 <?php
     define('HOST', 'localhost');
-    define('DBNAME', 'crud_mvc_poo_php');
+    define('DBNAME', 'crudpdo');
     define('USER', 'root');
     define('PASSWORD', '');
 
