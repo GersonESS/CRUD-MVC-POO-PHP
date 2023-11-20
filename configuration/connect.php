@@ -1,6 +1,6 @@
 <?php
     define('HOST', 'localhost');
-    define('DBNAME', 'crudpdo');
+    define('DBNAME', 'multimidia');
     define('USER', 'root');
     define('PASSWORD', '');
 
